@@ -1,0 +1,93 @@
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(name='description', content='A layout example with a side menu that hides on mobile, just like the Pure website.')
+  title Side Menu &ndash; Layout Examples &ndash; Pure
+body
+  #layout
+    // Menu toggle
+    a#menuLink.menu-link(href='#menu')
+      // Hamburger icon
+      span
+    #menu
+      .pure-menu.pure-menu-open
+        a.pure-menu-heading(href='#')
+          span
+          | Devcoin
+        ul
+          li
+            a(href='#earn') Earn
+          li
+            a(href='#spend') Spend
+          li
+            a(href='#transact') Transact
+          li
+            a(href='#trade') Trade
+    #main
+      
+      .header
+        .pure-g
+          .pure-u-1
+            img(src='/images/coin_orange.png')
+          .pure-u-1.title Devcoin
+        h2 An IRC network for developers and electronic currency based on Bitcoin.
+      .content
+        .pure-g
+          .pure-u-1-3.head-exp
+            img(src='/images/laptop_blue.png')
+            p 
+              strong Earn
+              |  Devcoin by assisting other developers in IRC rooms on the network.
+          .pure-u-1-3.head-exp
+            img(src='/images/ide_blue.png')
+            p 
+              strong Use
+              |  Devcoin to purchase technical assistance from others.
+          .pure-u-1-3.head-exp
+            img(src='/images/exchange_blue.png')
+            p
+             strong Exchange
+             |  Devcoin for other currencies, like Bitcoin.
+        .pure-g.signup
+          .pure-u-1.centxt
+            a(href='http://tinyletter.com/devcoin')
+              button.pure-button Join the Devcoin Pre-launch.
+        .pure-g
+          .pure-u-1.centxt
+            h2.content-subhead How does it work?
+        .pure-g
+
+          .pure-u-1.main-exp#earn
+            .pure-u-2-3
+              h2.content-subhead Earn Devcoin by assisting others
+              p Install the Devcoin IRC client, and start mining Devcoin by assisting others in your area of technical expertise. The network uses a consensus algorithm to minimize freeloading.
+            .pure-u-1-3
+              img(src='/images/laptop_yellow.png')
+
+          .pure-u-1.main-exp#spend
+            .pure-u-1-3
+              img(src='/images/ide_blue.png', style='width:90%')
+            .pure-u-2-3
+              h2.content-subhead Spend Devcoin on technical help from the network.
+              p With the Devcoin client, you can spend your Devcoin to get on demand technical help from the network, in any language or framework. 
+
+          .pure-u-1.main-exp#transact
+            .pure-u-2-3
+              h2.content-subhead Transact with Devcoin, just like Bitcoin.
+              p You can issue transactions and send value just like with Bitcoin and other cryptocurrencies. 
+            .pure-u-1-3
+              img(src='/images/exchange_yellow.png')
+
+          .pure-u-1.main-exp#trade
+            .pure-u-1-3
+              img(src='/images/trade_blue.png', style='width:90%')
+            .pure-u-2-3
+              h2.content-subhead Trade Devcoin on cryptocurrency exchanges.
+              p Buy and sell Devcoin on major crypto-currency exchanges across the world. Extract value in other curriencies from your participation in the Devoin network.
+
+        .pure-g
+          .pure-u-1.footer Made with <3 by 
+            a(href='http://twitter.com/recborg') Myles Recny.
+            |  Send feedback to 
+            a(href='mailto:mkrecny@gmail.com') mkrecny@gmail.com
+            | .

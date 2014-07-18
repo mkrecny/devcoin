@@ -1,0 +1,80 @@
+//Colors
+@orange:#FF530D;
+@blue:#62C2DB;
+@yellow:#E6DC5A;
+
+//Styles
+.txt(@darken:30%){
+	color:darken(#fff, @darken) !important;
+}
+
+body{
+  //background: #222;
+  background:darken(#fff, 8%);
+  .txt(60%);
+}
+
+.content{
+	padding-top:30px;
+}
+
+.centxt{
+  text-align:center;
+}
+
+.header{
+	.txt;
+	img{
+		text-align:right;
+		max-width:150px;
+	}
+	.title{
+		.txt(50%);
+		font-weight:100;
+		font-size:80px;
+	}
+  border-bottom: 1px solid darken(#fff, 25%);
+  h2{
+  	.txt(65%);
+  }
+}
+
+.head-exp{
+  .centxt;
+  img{
+    width:50%;
+  }
+}
+
+.signup{
+	button{
+		font-weight:100;
+		font-size:20px;
+		//background:#111;
+		border:1px solid @orange;
+		color:#333;
+		padding:20px 30px;
+		&:hover{
+			color:#fff;
+			background:@orange;
+			border:1px solid #333;
+		}	
+	}
+}
+
+.main-exp{
+  img{
+    width:100%
+  }
+}
+
+.footer{
+	text-align:center;
+	.txt(40%);
+	a{
+		color:@orange;
+	}
+	margin-top:30px;	
+	padding-top:10px;
+	border-top:1px solid darken(#fff, 65%);
+}
